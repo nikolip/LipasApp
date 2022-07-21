@@ -8,6 +8,7 @@
 import Foundation
 
 
-struct SportPlaceSimpleModel {
-    //TODO
+struct SportPlaceSimple : Codable {
+    var name : String
+    var sportPlaceId : Int
 }
