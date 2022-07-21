@@ -16,6 +16,9 @@
 		0121EF1528893ECA00131DCE /* LipasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF1428893ECA00131DCE /* LipasAppTests.swift */; };
 		0121EF1F28893ECA00131DCE /* LipasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF1E28893ECA00131DCE /* LipasAppUITests.swift */; };
 		0121EF2128893ECA00131DCE /* LipasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF2028893ECA00131DCE /* LipasAppUITestsLaunchTests.swift */; };
+		74A785FBD1DCFDD7D972FA94 /* Pods_LipasApp_LipasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */; };
+		86DF9048EEBB9D56110D7E51 /* Pods_LipasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */; };
+		D78E3F56BEB3B41EF9FF0D82 /* Pods_LipasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4127796A0209CA4124623B12 /* Pods_LipasApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		0121EF1A28893ECA00131DCE /* LipasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LipasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0121EF1E28893ECA00131DCE /* LipasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipasAppUITests.swift; sourceTree = "<group>"; };
 		0121EF2028893ECA00131DCE /* LipasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp.release.xcconfig"; path = "Target Support Files/Pods-LipasApp/Pods-LipasApp.release.xcconfig"; sourceTree = "<group>"; };
+		4127796A0209CA4124623B12 /* Pods_LipasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasAppTests.release.xcconfig"; path = "Target Support Files/Pods-LipasAppTests/Pods-LipasAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		54C3C033EDE34566364FE44F /* Pods-LipasApp-LipasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp-LipasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LipasApp-LipasAppUITests/Pods-LipasApp-LipasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D9345B0DE0B56231F58BFC5 /* Pods-LipasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp.debug.xcconfig"; path = "Target Support Files/Pods-LipasApp/Pods-LipasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasApp_LipasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB932E776A8624EEC0FCC19 /* Pods-LipasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LipasAppTests/Pods-LipasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD2A1AC45E71CBA7BD93C1A /* Pods-LipasApp-LipasAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp-LipasAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-LipasApp-LipasAppUITests/Pods-LipasApp-LipasAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78E3F56BEB3B41EF9FF0D82 /* Pods_LipasApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DF9048EEBB9D56110D7E51 /* Pods_LipasAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A785FBD1DCFDD7D972FA94 /* Pods_LipasApp_LipasAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0077CD5CC065302C68A97DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4127796A0209CA4124623B12 /* Pods_LipasApp.framework */,
+				C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */,
+				727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0121EEF128893EC800131DCE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				0121EF1328893ECA00131DCE /* LipasAppTests */,
 				0121EF1D28893ECA00131DCE /* LipasAppUITests */,
 				0121EEFB28893EC800131DCE /* Products */,
+				81BF7C1F9803478D92CEC3BF /* Pods */,
+				0077CD5CC065302C68A97DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +194,20 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		81BF7C1F9803478D92CEC3BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D9345B0DE0B56231F58BFC5 /* Pods-LipasApp.debug.xcconfig */,
+				16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */,
+				FDD2A1AC45E71CBA7BD93C1A /* Pods-LipasApp-LipasAppUITests.debug.xcconfig */,
+				54C3C033EDE34566364FE44F /* Pods-LipasApp-LipasAppUITests.release.xcconfig */,
+				FDB932E776A8624EEC0FCC19 /* Pods-LipasAppTests.debug.xcconfig */,
+				49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0121EF2428893ECA00131DCE /* Build configuration list for PBXNativeTarget "LipasApp" */;
 			buildPhases = (
+				4A639936AA470DE1CB8F6262 /* [CP] Check Pods Manifest.lock */,
 				0121EEF628893EC800131DCE /* Sources */,
 				0121EEF728893EC800131DCE /* Frameworks */,
 				0121EEF828893EC800131DCE /* Resources */,
+				8E92D680CDF4ECD83532809F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0121EF2728893ECA00131DCE /* Build configuration list for PBXNativeTarget "LipasAppTests" */;
 			buildPhases = (
+				3B4EFAF7BA16C9E17B43F396 /* [CP] Check Pods Manifest.lock */,
 				0121EF0C28893ECA00131DCE /* Sources */,
 				0121EF0D28893ECA00131DCE /* Frameworks */,
 				0121EF0E28893ECA00131DCE /* Resources */,
@@ -209,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0121EF2A28893ECA00131DCE /* Build configuration list for PBXNativeTarget "LipasAppUITests" */;
 			buildPhases = (
+				AA2664761C2B83BEB700A99B /* [CP] Check Pods Manifest.lock */,
 				0121EF1628893ECA00131DCE /* Sources */,
 				0121EF1728893ECA00131DCE /* Frameworks */,
 				0121EF1828893ECA00131DCE /* Resources */,
+				22A85E5C153C958F5859B64E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +338,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22A85E5C153C958F5859B64E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LipasApp-LipasAppUITests/Pods-LipasApp-LipasAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LipasApp-LipasAppUITests/Pods-LipasApp-LipasAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LipasApp-LipasAppUITests/Pods-LipasApp-LipasAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B4EFAF7BA16C9E17B43F396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LipasAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A639936AA470DE1CB8F6262 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LipasApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E92D680CDF4ECD83532809F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LipasApp/Pods-LipasApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LipasApp/Pods-LipasApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LipasApp/Pods-LipasApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2664761C2B83BEB700A99B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LipasApp-LipasAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0121EEF628893EC800131DCE /* Sources */ = {
@@ -474,6 +623,7 @@
 		};
 		0121EF2528893ECA00131DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9345B0DE0B56231F58BFC5 /* Pods-LipasApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,6 +652,7 @@
 		};
 		0121EF2628893ECA00131DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -530,6 +681,7 @@
 		};
 		0121EF2828893ECA00131DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB932E776A8624EEC0FCC19 /* Pods-LipasAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +702,7 @@
 		};
 		0121EF2928893ECA00131DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +723,7 @@
 		};
 		0121EF2B28893ECA00131DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD2A1AC45E71CBA7BD93C1A /* Pods-LipasApp-LipasAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,6 +742,7 @@
 		};
 		0121EF2C28893ECA00131DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C3C033EDE34566364FE44F /* Pods-LipasApp-LipasAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
