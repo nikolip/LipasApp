@@ -11,7 +11,7 @@ see more (https://www.lipas.fi/etusivu)
 
 Clone the repository: 
 ```
-    git clone <url>
+    git clone git@github.com:nikolip/LipasApp.git
 ```
 
 Go to project root and install pods:
