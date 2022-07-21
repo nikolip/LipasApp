@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SportPlaceListViewController : UIViewController {
+class SportPlaceTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

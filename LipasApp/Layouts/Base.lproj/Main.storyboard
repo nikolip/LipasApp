@@ -11,7 +11,7 @@
         <!--Root View Controller-->
         <scene sceneID="88e-6o-17q">
             <objects>
-                <tableViewController id="Kz9-xe-qpn" sceneMemberID="viewController">
+                <tableViewController id="Kz9-xe-qpn" customClass="SportPlaceTableViewController" customModule="LipasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DaX-wR-kEH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
