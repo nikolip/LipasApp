@@ -27,6 +27,8 @@
 		0121EF4928895C2B00131DCE /* SportPlaceDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF4828895C2B00131DCE /* SportPlaceDetailsTests.swift */; };
 		0121EF4C28895DC700131DCE /* SportPlaceTableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF4B28895DC700131DCE /* SportPlaceTableViewModelTests.swift */; };
 		0121EF4F28895F6400131DCE /* MockSportPlaceSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF4E28895F6400131DCE /* MockSportPlaceSimple.swift */; };
+		0121EF5428896D6A00131DCE /* SportPlaceSingleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF5328896D6A00131DCE /* SportPlaceSingleDetailView.swift */; };
+		0121EF5628896D7A00131DCE /* SportPlaceSingleDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0121EF5528896D7A00131DCE /* SportPlaceSingleDetailView.xib */; };
 		74A785FBD1DCFDD7D972FA94 /* Pods_LipasApp_LipasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */; };
 		86DF9048EEBB9D56110D7E51 /* Pods_LipasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */; };
 		D78E3F56BEB3B41EF9FF0D82 /* Pods_LipasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4127796A0209CA4124623B12 /* Pods_LipasApp.framework */; };
@@ -74,6 +76,8 @@
 		0121EF4828895C2B00131DCE /* SportPlaceDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsTests.swift; sourceTree = "<group>"; };
 		0121EF4B28895DC700131DCE /* SportPlaceTableViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceTableViewModelTests.swift; sourceTree = "<group>"; };
 		0121EF4E28895F6400131DCE /* MockSportPlaceSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSportPlaceSimple.swift; sourceTree = "<group>"; };
+		0121EF5328896D6A00131DCE /* SportPlaceSingleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceSingleDetailView.swift; sourceTree = "<group>"; };
+		0121EF5528896D7A00131DCE /* SportPlaceSingleDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportPlaceSingleDetailView.xib; sourceTree = "<group>"; };
 		16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp.release.xcconfig"; path = "Target Support Files/Pods-LipasApp/Pods-LipasApp.release.xcconfig"; sourceTree = "<group>"; };
 		4127796A0209CA4124623B12 /* Pods_LipasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasAppTests.release.xcconfig"; path = "Target Support Files/Pods-LipasAppTests/Pods-LipasAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 		0121EF3028893F4700131DCE /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF5228896D2800131DCE /* SportPlaceSingleDetailView */,
 				0121EF40288955AB00131DCE /* SportPlaceTableViewCell */,
 				0121EF0328893EC800131DCE /* Main.storyboard */,
 				0121EF0828893ECA00131DCE /* LaunchScreen.storyboard */,
@@ -257,6 +262,15 @@
 				0121EF4E28895F6400131DCE /* MockSportPlaceSimple.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0121EF5228896D2800131DCE /* SportPlaceSingleDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0121EF5328896D6A00131DCE /* SportPlaceSingleDetailView.swift */,
+				0121EF5528896D7A00131DCE /* SportPlaceSingleDetailView.xib */,
+			);
+			path = SportPlaceSingleDetailView;
 			sourceTree = "<group>";
 		};
 		81BF7C1F9803478D92CEC3BF /* Pods */ = {
@@ -381,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0121EF5628896D7A00131DCE /* SportPlaceSingleDetailView.xib in Resources */,
 				0121EF44288955FD00131DCE /* SportPlaceTableViewCell.xib in Resources */,
 				0121EF0A28893ECA00131DCE /* LaunchScreen.storyboard in Resources */,
 				0121EF0728893ECA00131DCE /* Assets.xcassets in Resources */,
@@ -519,6 +534,7 @@
 				0121EF43288955FD00131DCE /* SportPlaceTableViewCell.swift in Sources */,
 				0121EF3D2889441700131DCE /* SportPlaceDetails.swift in Sources */,
 				0121EF372889430000131DCE /* SportPlaceDetailsViewModel.swift in Sources */,
+				0121EF5428896D6A00131DCE /* SportPlaceSingleDetailView.swift in Sources */,
 				0121EEFE28893EC800131DCE /* AppDelegate.swift in Sources */,
 				0121EF35288942D400131DCE /* SportPlaceDetailsViewController.swift in Sources */,
 				0121EF0028893EC800131DCE /* SceneDelegate.swift in Sources */,

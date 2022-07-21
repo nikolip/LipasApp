@@ -9,7 +9,6 @@ import Foundation
 
 struct SportPlaceDetails : Codable {
     var name : String?
-    var freeUse : Bool?
     var phoneNumber : String?
     var location : Location
 }
