@@ -10,14 +10,14 @@ see more (https://www.lipas.fi/etusivu)
 ### Usage 
 
 Clone the repository: 
-    ´´´
+```
     git clone <url>
-    ´´´
+```
 
 Go to project root and install pods:
-    ´´´
+```
     pod install
-    ´´´
+```
     
 You might need to change development team to run app.
 
