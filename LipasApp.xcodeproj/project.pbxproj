@@ -19,8 +19,8 @@
 		0121EF35288942D400131DCE /* SportPlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF34288942D400131DCE /* SportPlaceDetailsViewController.swift */; };
 		0121EF372889430000131DCE /* SportPlaceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF362889430000131DCE /* SportPlaceDetailsViewModel.swift */; };
 		0121EF392889433100131DCE /* SportPlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF382889433100131DCE /* SportPlaceListViewModel.swift */; };
-		0121EF3B2889440800131DCE /* SportPlaceSimpleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3A2889440800131DCE /* SportPlaceSimpleModel.swift */; };
-		0121EF3D2889441700131DCE /* SportPlaceDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3C2889441700131DCE /* SportPlaceDetailsModel.swift */; };
+		0121EF3B2889440800131DCE /* SportPlaceSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3A2889440800131DCE /* SportPlaceSimple.swift */; };
+		0121EF3D2889441700131DCE /* SportPlaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3C2889441700131DCE /* SportPlaceDetails.swift */; };
 		0121EF3F288944D900131DCE /* LipasApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3E288944D900131DCE /* LipasApiClient.swift */; };
 		74A785FBD1DCFDD7D972FA94 /* Pods_LipasApp_LipasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */; };
 		86DF9048EEBB9D56110D7E51 /* Pods_LipasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */; };
@@ -61,8 +61,8 @@
 		0121EF34288942D400131DCE /* SportPlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsViewController.swift; sourceTree = "<group>"; };
 		0121EF362889430000131DCE /* SportPlaceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsViewModel.swift; sourceTree = "<group>"; };
 		0121EF382889433100131DCE /* SportPlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceListViewModel.swift; sourceTree = "<group>"; };
-		0121EF3A2889440800131DCE /* SportPlaceSimpleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceSimpleModel.swift; sourceTree = "<group>"; };
-		0121EF3C2889441700131DCE /* SportPlaceDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsModel.swift; sourceTree = "<group>"; };
+		0121EF3A2889440800131DCE /* SportPlaceSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceSimple.swift; sourceTree = "<group>"; };
+		0121EF3C2889441700131DCE /* SportPlaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetails.swift; sourceTree = "<group>"; };
 		0121EF3E288944D900131DCE /* LipasApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipasApiClient.swift; sourceTree = "<group>"; };
 		16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp.release.xcconfig"; path = "Target Support Files/Pods-LipasApp/Pods-LipasApp.release.xcconfig"; sourceTree = "<group>"; };
 		4127796A0209CA4124623B12 /* Pods_LipasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,8 +189,8 @@
 		0121EF2F28893F3400131DCE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0121EF3A2889440800131DCE /* SportPlaceSimpleModel.swift */,
-				0121EF3C2889441700131DCE /* SportPlaceDetailsModel.swift */,
+				0121EF3A2889440800131DCE /* SportPlaceSimple.swift */,
+				0121EF3C2889441700131DCE /* SportPlaceDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -464,11 +464,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0121EF3B2889440800131DCE /* SportPlaceSimpleModel.swift in Sources */,
+				0121EF3B2889440800131DCE /* SportPlaceSimple.swift in Sources */,
 				0121EF3F288944D900131DCE /* LipasApiClient.swift in Sources */,
 				0121EF392889433100131DCE /* SportPlaceListViewModel.swift in Sources */,
 				0121EF332889429800131DCE /* SportPlaceListViewController.swift in Sources */,
-				0121EF3D2889441700131DCE /* SportPlaceDetailsModel.swift in Sources */,
+				0121EF3D2889441700131DCE /* SportPlaceDetails.swift in Sources */,
 				0121EF372889430000131DCE /* SportPlaceDetailsViewModel.swift in Sources */,
 				0121EEFE28893EC800131DCE /* AppDelegate.swift in Sources */,
 				0121EF35288942D400131DCE /* SportPlaceDetailsViewController.swift in Sources */,
