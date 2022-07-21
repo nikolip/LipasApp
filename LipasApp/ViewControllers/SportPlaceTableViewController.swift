@@ -14,14 +14,26 @@ class SportPlaceTableViewController : UITableViewController {
     
     let viewModel = SportPlaceTableViewModel()
     private let disboseBag = DisposeBag()
+    let indicatorView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = nil //set nil to prevent duplicate datasources
+        
+        //set nil to prevent duplicate datasources
+        tableView.dataSource = nil
+        
         registerCell()
         bindViewModel()
-        viewModel.getSimpleSportPlaces()
         
+        //add background view to table for activity indicator
+        addBackGroundViewToTable()
+        bindActivityIndicator()
+        
+        viewModel.getSimpleSportPlaces()
+    }
+    
+    private func addBackGroundViewToTable() {
+        tableView.backgroundView = indicatorView
     }
     
     private func registerCell() {
@@ -34,6 +46,13 @@ class SportPlaceTableViewController : UITableViewController {
             .bind(to: tableView.rx.items(cellIdentifier: SportPlaceTableViewCell.identifier, cellType: SportPlaceTableViewCell.self)) { row, sportPlace, cell in
                 cell.sportPlace = sportPlace
             }.disposed(by: disboseBag)
+    }
+    
+    private func bindActivityIndicator() {
+        viewModel.showLoadingIcon.asObservable()
+            .subscribe(onNext: { status in
+                status ? self.indicatorView.showLoader() : self.indicatorView.dismissLoader()
+            }).disposed(by: disboseBag)
     }
     
     //MARK: -- overrides    
@@ -49,6 +68,4 @@ class SportPlaceTableViewController : UITableViewController {
             destinationViewContoller.viewModel = SportPlaceDetailsViewModel(sportPlaceId: sportPlace.sportsPlaceId)
         }
     }
-    
-    
 }

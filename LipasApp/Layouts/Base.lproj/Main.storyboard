@@ -39,10 +39,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qu-X9-3r1">
-                                <rect key="frame" x="10" y="88" width="394" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-08-8Xx" userLabel="Details Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="450"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="450" id="Qwl-lk-T5I"/>
                                         </constraints>
@@ -63,9 +63,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0qu-X9-3r1" firstAttribute="top" secondItem="kPn-AQ-WMd" secondAttribute="top" id="5uv-GV-rPA"/>
-                            <constraint firstItem="0qu-X9-3r1" firstAttribute="leading" secondItem="kPn-AQ-WMd" secondAttribute="leading" constant="10" id="9hV-bI-yAB"/>
+                            <constraint firstItem="0qu-X9-3r1" firstAttribute="leading" secondItem="kPn-AQ-WMd" secondAttribute="leading" id="9hV-bI-yAB"/>
                             <constraint firstItem="kPn-AQ-WMd" firstAttribute="bottom" secondItem="0qu-X9-3r1" secondAttribute="bottom" id="oZl-QN-eHT"/>
-                            <constraint firstItem="kPn-AQ-WMd" firstAttribute="trailing" secondItem="0qu-X9-3r1" secondAttribute="trailing" constant="10" id="tIN-zT-4ri"/>
+                            <constraint firstItem="kPn-AQ-WMd" firstAttribute="trailing" secondItem="0qu-X9-3r1" secondAttribute="trailing" id="tIN-zT-4ri"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yoX-sg-5QX"/>

@@ -21,8 +21,9 @@ class SportPlaceDetailsViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Add details
+        
         initiateDetailViews()
+        
         configureAndAddDetailView(title: "name", detailView: nameView)
         configureAndAddDetailView(title: "phonenumber", detailView: phoneNumberView)
         configureAndAddDetailView(title: "address", detailView: addressView)
@@ -31,9 +32,9 @@ class SportPlaceDetailsViewController : UIViewController {
         configureAndAddDetailView(title: "city", detailView: cityNameView)
         
         bindDetailValues()
+        bindActivityIndicator()
         
         viewModel?.getSportPlaceDetails()
-        
     }
     
     private func bindDetailValues() {
@@ -45,6 +46,13 @@ class SportPlaceDetailsViewController : UIViewController {
                 self.postalOfficeView.valueLabel.text = placeInfo?.location.postalOffice ?? self.missingFieldText
                 self.postalCodeView.valueLabel.text = placeInfo?.location.postalCode ?? self.missingFieldText
                 self.cityNameView.valueLabel.text = placeInfo?.location.city?.name ?? self.missingFieldText
+            }).disposed(by: disposeBag)
+    }
+    
+    private func bindActivityIndicator() {
+        viewModel?.showLoadingIcon.asObservable()
+            .subscribe(onNext: { status in
+                status ? self.detailsStackview.showLoader() : self.detailsStackview.dismissLoader()
             }).disposed(by: disposeBag)
     }
     
