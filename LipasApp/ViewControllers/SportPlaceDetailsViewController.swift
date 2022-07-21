@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
+//  SportPlaceDetailsViewController.swift
 //  LipasApp
 //
 //  Created by Niko Lipponen on 21.7.2022.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
 
+class SportPlaceDetailsViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-

@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		0121EEFE28893EC800131DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EEFD28893EC800131DCE /* AppDelegate.swift */; };
 		0121EF0028893EC800131DCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EEFF28893EC800131DCE /* SceneDelegate.swift */; };
-		0121EF0228893EC800131DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF0128893EC800131DCE /* ViewController.swift */; };
 		0121EF0528893EC800131DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121EF0328893EC800131DCE /* Main.storyboard */; };
 		0121EF0728893ECA00131DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0121EF0628893ECA00131DCE /* Assets.xcassets */; };
 		0121EF0A28893ECA00131DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121EF0828893ECA00131DCE /* LaunchScreen.storyboard */; };
 		0121EF1528893ECA00131DCE /* LipasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF1428893ECA00131DCE /* LipasAppTests.swift */; };
 		0121EF1F28893ECA00131DCE /* LipasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF1E28893ECA00131DCE /* LipasAppUITests.swift */; };
 		0121EF2128893ECA00131DCE /* LipasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF2028893ECA00131DCE /* LipasAppUITestsLaunchTests.swift */; };
+		0121EF332889429800131DCE /* SportPlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF322889429800131DCE /* SportPlaceListViewController.swift */; };
+		0121EF35288942D400131DCE /* SportPlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF34288942D400131DCE /* SportPlaceDetailsViewController.swift */; };
+		0121EF372889430000131DCE /* SportPlaceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF362889430000131DCE /* SportPlaceDetailsViewModel.swift */; };
+		0121EF392889433100131DCE /* SportPlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF382889433100131DCE /* SportPlaceListViewModel.swift */; };
+		0121EF3B2889440800131DCE /* SportPlaceSimpleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3A2889440800131DCE /* SportPlaceSimpleModel.swift */; };
+		0121EF3D2889441700131DCE /* SportPlaceDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3C2889441700131DCE /* SportPlaceDetailsModel.swift */; };
+		0121EF3F288944D900131DCE /* LipasApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF3E288944D900131DCE /* LipasApiClient.swift */; };
 		74A785FBD1DCFDD7D972FA94 /* Pods_LipasApp_LipasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */; };
 		86DF9048EEBB9D56110D7E51 /* Pods_LipasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */; };
 		D78E3F56BEB3B41EF9FF0D82 /* Pods_LipasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4127796A0209CA4124623B12 /* Pods_LipasApp.framework */; };
@@ -42,7 +48,6 @@
 		0121EEFA28893EC800131DCE /* LipasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LipasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0121EEFD28893EC800131DCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0121EEFF28893EC800131DCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0121EF0128893EC800131DCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0121EF0428893EC800131DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0121EF0628893ECA00131DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0121EF0928893ECA00131DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +57,13 @@
 		0121EF1A28893ECA00131DCE /* LipasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LipasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0121EF1E28893ECA00131DCE /* LipasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipasAppUITests.swift; sourceTree = "<group>"; };
 		0121EF2028893ECA00131DCE /* LipasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0121EF322889429800131DCE /* SportPlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceListViewController.swift; sourceTree = "<group>"; };
+		0121EF34288942D400131DCE /* SportPlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		0121EF362889430000131DCE /* SportPlaceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsViewModel.swift; sourceTree = "<group>"; };
+		0121EF382889433100131DCE /* SportPlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceListViewModel.swift; sourceTree = "<group>"; };
+		0121EF3A2889440800131DCE /* SportPlaceSimpleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceSimpleModel.swift; sourceTree = "<group>"; };
+		0121EF3C2889441700131DCE /* SportPlaceDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsModel.swift; sourceTree = "<group>"; };
+		0121EF3E288944D900131DCE /* LipasApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipasApiClient.swift; sourceTree = "<group>"; };
 		16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp.release.xcconfig"; path = "Target Support Files/Pods-LipasApp/Pods-LipasApp.release.xcconfig"; sourceTree = "<group>"; };
 		4127796A0209CA4124623B12 /* Pods_LipasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasAppTests.release.xcconfig"; path = "Target Support Files/Pods-LipasAppTests/Pods-LipasAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,10 +145,7 @@
 				0121EF2D28893F0A00131DCE /* ViewModels */,
 				0121EEFD28893EC800131DCE /* AppDelegate.swift */,
 				0121EEFF28893EC800131DCE /* SceneDelegate.swift */,
-				0121EF0128893EC800131DCE /* ViewController.swift */,
-				0121EF0328893EC800131DCE /* Main.storyboard */,
 				0121EF0628893ECA00131DCE /* Assets.xcassets */,
-				0121EF0828893ECA00131DCE /* LaunchScreen.storyboard */,
 				0121EF0B28893ECA00131DCE /* Info.plist */,
 			);
 			path = LipasApp;
@@ -162,6 +171,8 @@
 		0121EF2D28893F0A00131DCE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF362889430000131DCE /* SportPlaceDetailsViewModel.swift */,
+				0121EF382889433100131DCE /* SportPlaceListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -169,6 +180,8 @@
 		0121EF2E28893F1400131DCE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF322889429800131DCE /* SportPlaceListViewController.swift */,
+				0121EF34288942D400131DCE /* SportPlaceDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +189,8 @@
 		0121EF2F28893F3400131DCE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF3A2889440800131DCE /* SportPlaceSimpleModel.swift */,
+				0121EF3C2889441700131DCE /* SportPlaceDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +198,8 @@
 		0121EF3028893F4700131DCE /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF0328893EC800131DCE /* Main.storyboard */,
+				0121EF0828893ECA00131DCE /* LaunchScreen.storyboard */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -190,6 +207,7 @@
 		0121EF3128893FC000131DCE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF3E288944D900131DCE /* LipasApiClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,7 +222,6 @@
 				FDB932E776A8624EEC0FCC19 /* Pods-LipasAppTests.debug.xcconfig */,
 				49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -447,8 +464,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0121EF0228893EC800131DCE /* ViewController.swift in Sources */,
+				0121EF3B2889440800131DCE /* SportPlaceSimpleModel.swift in Sources */,
+				0121EF3F288944D900131DCE /* LipasApiClient.swift in Sources */,
+				0121EF392889433100131DCE /* SportPlaceListViewModel.swift in Sources */,
+				0121EF332889429800131DCE /* SportPlaceListViewController.swift in Sources */,
+				0121EF3D2889441700131DCE /* SportPlaceDetailsModel.swift in Sources */,
+				0121EF372889430000131DCE /* SportPlaceDetailsViewModel.swift in Sources */,
 				0121EEFE28893EC800131DCE /* AppDelegate.swift in Sources */,
+				0121EF35288942D400131DCE /* SportPlaceDetailsViewController.swift in Sources */,
 				0121EF0028893EC800131DCE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
