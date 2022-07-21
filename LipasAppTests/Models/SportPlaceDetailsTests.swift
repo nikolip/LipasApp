@@ -21,7 +21,7 @@ class SportPlaceDetailsTests : XCTestCase {
     
     /// Tests that SportPlaceDetails model initialization works
     func testSportPlaceDetailsInit() {
-        XCTAssertNotNil(SportPlaceDetails(name: "mock-name", freeUse: false, phoneNumber: "0400123", location: Location(address: "mock-address", city: City(name: "mock-city"), postalOffice: "mock-office", postalCode: "mock-code")))
+        XCTAssertNotNil(SportPlaceDetails(name: "mock-name", phoneNumber: "0400123", location: Location(address: "mock-address", city: City(name: "mock-city"), postalOffice: "mock-office", postalCode: "mock-code")))
     }
     
 }

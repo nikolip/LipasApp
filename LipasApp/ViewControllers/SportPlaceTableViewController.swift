@@ -19,7 +19,7 @@ class SportPlaceTableViewController : UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = nil //set nil to prevent duplicate datasources
         registerCell()
-        bind()
+        bindViewModel()
         viewModel.getSimpleSportPlaces()
         
     }
@@ -29,7 +29,7 @@ class SportPlaceTableViewController : UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: SportPlaceTableViewCell.identifier)
     }
     
-    private func bind() {
+    private func bindViewModel() {
         viewModel.simpleSportPlaceList.asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: SportPlaceTableViewCell.identifier, cellType: SportPlaceTableViewCell.self)) { row, sportPlace, cell in
                 cell.sportPlace = sportPlace
