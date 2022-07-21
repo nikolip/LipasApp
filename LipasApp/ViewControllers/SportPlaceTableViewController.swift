@@ -36,8 +36,7 @@ class SportPlaceTableViewController : UITableViewController {
             }.disposed(by: disboseBag)
     }
     
-    //MARK: -- overrides
-    
+    //MARK: -- overrides    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "sportPlaceTableToDetails", sender: nil)
     }

@@ -29,10 +29,6 @@ class SportPlaceDetailsViewController : UIViewController {
         configureAndAddDetailView(title: "postal office", detailView: postalOfficeView)
         configureAndAddDetailView(title: "postcode", detailView: postalCodeView)
         configureAndAddDetailView(title: "city", detailView: cityNameView)
-        
-        //Add Empty view to take extra space from stack
-        addEmptyViewToDetailsStackView()
-
     }
     
     private func initiateDetailViews() {
@@ -50,11 +46,4 @@ class SportPlaceDetailsViewController : UIViewController {
         detailView.titleLabel.text = title
         detailsStackview.addArrangedSubview(detailView)
     }
-    
-    private func addEmptyViewToDetailsStackView() {
-        let view = UIView()
-        self.detailsStackview.addArrangedSubview(view)
-    }
-    
-    
 }

@@ -29,6 +29,8 @@
 		0121EF4F28895F6400131DCE /* MockSportPlaceSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF4E28895F6400131DCE /* MockSportPlaceSimple.swift */; };
 		0121EF5428896D6A00131DCE /* SportPlaceSingleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF5328896D6A00131DCE /* SportPlaceSingleDetailView.swift */; };
 		0121EF5628896D7A00131DCE /* SportPlaceSingleDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0121EF5528896D7A00131DCE /* SportPlaceSingleDetailView.xib */; };
+		0121EF58288981FE00131DCE /* SportPlaceDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF57288981FE00131DCE /* SportPlaceDetailsViewModelTests.swift */; };
+		0121EF5A2889828000131DCE /* MockSportPlaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121EF592889828000131DCE /* MockSportPlaceDetails.swift */; };
 		74A785FBD1DCFDD7D972FA94 /* Pods_LipasApp_LipasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413920B2614BFE83DDBC52E /* Pods_LipasApp_LipasAppUITests.framework */; };
 		86DF9048EEBB9D56110D7E51 /* Pods_LipasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727D9C42AA5FF23F03017C9D /* Pods_LipasAppTests.framework */; };
 		D78E3F56BEB3B41EF9FF0D82 /* Pods_LipasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4127796A0209CA4124623B12 /* Pods_LipasApp.framework */; };
@@ -78,6 +80,8 @@
 		0121EF4E28895F6400131DCE /* MockSportPlaceSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSportPlaceSimple.swift; sourceTree = "<group>"; };
 		0121EF5328896D6A00131DCE /* SportPlaceSingleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceSingleDetailView.swift; sourceTree = "<group>"; };
 		0121EF5528896D7A00131DCE /* SportPlaceSingleDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportPlaceSingleDetailView.xib; sourceTree = "<group>"; };
+		0121EF57288981FE00131DCE /* SportPlaceDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPlaceDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		0121EF592889828000131DCE /* MockSportPlaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSportPlaceDetails.swift; sourceTree = "<group>"; };
 		16023FEB83CF72E15C425B34 /* Pods-LipasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasApp.release.xcconfig"; path = "Target Support Files/Pods-LipasApp/Pods-LipasApp.release.xcconfig"; sourceTree = "<group>"; };
 		4127796A0209CA4124623B12 /* Pods_LipasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LipasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DBF8FD736541CA0F0640DF /* Pods-LipasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LipasAppTests.release.xcconfig"; path = "Target Support Files/Pods-LipasAppTests/Pods-LipasAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				0121EF4B28895DC700131DCE /* SportPlaceTableViewModelTests.swift */,
+				0121EF57288981FE00131DCE /* SportPlaceDetailsViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				0121EF4E28895F6400131DCE /* MockSportPlaceSimple.swift */,
+				0121EF592889828000131DCE /* MockSportPlaceDetails.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -545,6 +551,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0121EF58288981FE00131DCE /* SportPlaceDetailsViewModelTests.swift in Sources */,
+				0121EF5A2889828000131DCE /* MockSportPlaceDetails.swift in Sources */,
 				0121EF472889599F00131DCE /* SportPlaceSimpleTests.swift in Sources */,
 				0121EF4C28895DC700131DCE /* SportPlaceTableViewModelTests.swift in Sources */,
 				0121EF4F28895F6400131DCE /* MockSportPlaceSimple.swift in Sources */,
