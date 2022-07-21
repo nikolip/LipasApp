@@ -30,8 +30,8 @@ You might need to change development team to run app.
     - App: Lipas is open API so all calls will go to production
         - NOTE - lipas uses http-protocol not (https). App Transport security settings have been changed to allow Arbitary loads
         
-    - Pods
-        - RxSwift
-        - RxCocoa
-        - Alamofire
+- Pods
+    - RxSwift
+    - RxCocoa
+    - Alamofire
     
