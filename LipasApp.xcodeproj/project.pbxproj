@@ -99,6 +99,11 @@
 		0121EEFC28893EC800131DCE /* LipasApp */ = {
 			isa = PBXGroup;
 			children = (
+				0121EF3128893FC000131DCE /* Services */,
+				0121EF3028893F4700131DCE /* Layouts */,
+				0121EF2F28893F3400131DCE /* Models */,
+				0121EF2E28893F1400131DCE /* ViewControllers */,
+				0121EF2D28893F0A00131DCE /* ViewModels */,
 				0121EEFD28893EC800131DCE /* AppDelegate.swift */,
 				0121EEFF28893EC800131DCE /* SceneDelegate.swift */,
 				0121EF0128893EC800131DCE /* ViewController.swift */,
@@ -125,6 +130,41 @@
 				0121EF2028893ECA00131DCE /* LipasAppUITestsLaunchTests.swift */,
 			);
 			path = LipasAppUITests;
+			sourceTree = "<group>";
+		};
+		0121EF2D28893F0A00131DCE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0121EF2E28893F1400131DCE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0121EF2F28893F3400131DCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0121EF3028893F4700131DCE /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		0121EF3128893FC000131DCE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
