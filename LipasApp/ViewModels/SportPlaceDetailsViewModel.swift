@@ -10,4 +10,9 @@ import Foundation
 
 class SportPlaceDetailsViewModel {
     //TODO
+    var sportPlaceId : Int
+    
+    init(sportPlaceId: Int) {
+        self.sportPlaceId = sportPlaceId
+    }
 }

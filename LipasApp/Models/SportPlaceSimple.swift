@@ -10,5 +10,5 @@ import Foundation
 
 struct SportPlaceSimple : Codable {
     var name : String
-    var sportPlaceId : Int
+    var sportsPlaceId : Int
 }

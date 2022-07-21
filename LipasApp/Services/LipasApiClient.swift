@@ -21,7 +21,7 @@ class LipasApiClient {
     
     func getSportPlaceSimpleList(completion: @escaping GetSportPlaceSimpleListCompletion) {
         //parameters are hard because this is example app.
-        AF.request(baseUrl, parameters: ["field": "name"])
+        AF.request(baseUrl, parameters: ["fields": "name"])
             .validate()
             .responseDecodable(of: [SportPlaceSimple].self) { response in
                 switch response.result {
@@ -51,8 +51,8 @@ class LipasApiClient {
     typealias GetSportPlaceDetailsResult = Result<SportPlaceDetails, GetSportPlaceDetailsFailureReason>
     typealias GetSportPlaceDetailsCompletion = (_ result: GetSportPlaceDetailsResult) -> Void
 
-    func getSportPlaceDetails(sportPlaceId : Int, completion: @escaping GetSportPlaceDetailsCompletion) {
-        AF.request(baseUrl + "/\(sportPlaceId)")
+    func getSportPlaceDetails(sportsPlaceId : Int, completion: @escaping GetSportPlaceDetailsCompletion) {
+        AF.request(baseUrl + "/\(sportsPlaceId)")
             .validate()
             .responseDecodable(of: SportPlaceDetails.self) { response in
                 switch response.result {
