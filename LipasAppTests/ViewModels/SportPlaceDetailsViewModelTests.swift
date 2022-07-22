@@ -12,8 +12,7 @@ import XCTest
 class SportPlaceDetailsViewModelTests : XCTestCase {
     
     //MARK: - getSportPlaceDetails
-    func testGet() {
-        
+    func testGetSportPlaceDetailsSuccess() {
         let lipasApiClient = MockLipasApiClient()
         lipasApiClient.getSportPlaceDetailsResult = .success(SportPlaceDetails.createMock())
         
@@ -26,6 +25,19 @@ class SportPlaceDetailsViewModelTests : XCTestCase {
         
         //Value should placed after succesful call
         XCTAssertNotNil(viewModel.sportPlaceDetails.value)
+        
+    }
+    
+    
+    func testGetDetailSportPlacesFailure() {
+        let lipasApiClient = MockLipasApiClient()
+        lipasApiClient.getSportPlaceDetailsResult = .failure(.notFound)
+        
+        let viewModel = SportPlaceDetailsViewModel(sportPlaceId: 1, lipasApiClient: lipasApiClient)
+        
+        XCTAssertFalse(viewModel.showError.value)
+        viewModel.getSportPlaceDetails()
+        XCTAssertTrue(viewModel.showError.value)
         
     }
 }

@@ -12,7 +12,7 @@ import XCTest
 class SportPlaceTableViewModelTests : XCTestCase {
     
     //MARK: - getSimpleSportPlaces
-    func testGetSimpleSportPlaces() {
+    func testGetSimpleSportPlacesSuccess() {
         
         let lipasApiClient = MockLipasApiClient()
         lipasApiClient.getSportPlaceSimpleListResult = .success([SportPlaceSimple.createMock()])
@@ -28,6 +28,19 @@ class SportPlaceTableViewModelTests : XCTestCase {
         //List should contain 1 item
         XCTAssertTrue(viewModel.simpleSportPlaceList.value.count == 1)
         XCTAssertTrue(lipasApiClient.isGetSportPlaceSimpleListcalled)
+    }
+    
+    func testGetSimpleSportPlacesFailure() {
+        let lipasApiClient = MockLipasApiClient()
+        lipasApiClient.getSportPlaceSimpleListResult = .failure(LipasApiClient.GetSportPlaceSimpleListFailureReason.notFound)
+        
+        let viewModel = SportPlaceTableViewModel(lipasApiClient: lipasApiClient)
+        
+        XCTAssertFalse(viewModel.showError.value)
+        
+        viewModel.getSimpleSportPlaces()
+        XCTAssertTrue(viewModel.showError.value)
+        
     }
 }
 
