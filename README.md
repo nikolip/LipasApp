@@ -5,6 +5,11 @@ iOS application build with swift using MVVM architecture and rxLibrary
 App uses open API called lipas which contains sport places all around finland
 see more (https://www.lipas.fi/etusivu) 
 
+
+![list view](list.png)
+![details view](details.png)
+
+
 ## Getting Started
 
 ### Usage 
