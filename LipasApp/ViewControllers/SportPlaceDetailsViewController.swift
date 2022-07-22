@@ -35,6 +35,7 @@ class SportPlaceDetailsViewController : UIViewController {
         
         bindDetailValues()
         bindActivityIndicator()
+        bindAlerts()
         
         viewModel?.getSportPlaceDetails()
     }
@@ -55,6 +56,14 @@ class SportPlaceDetailsViewController : UIViewController {
         viewModel?.showLoadingIcon.asObservable()
             .subscribe(onNext: { status in
                 status ? self.detailsStackview.showLoader() : self.detailsStackview.dismissLoader()
+            }).disposed(by: disposeBag)
+    }
+    
+    private func bindAlerts() {
+        viewModel?.showError.asObservable()
+            .filter{$0}
+            .subscribe({ _ in
+                self.showAlert(title: "Error", message: "Something went wrong")
             }).disposed(by: disposeBag)
     }
     

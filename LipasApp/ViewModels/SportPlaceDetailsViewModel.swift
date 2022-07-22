@@ -6,14 +6,12 @@
 //
 
 import Foundation
-import RxSwift
 import RxCocoa
 
 
-class SportPlaceDetailsViewModel {
+class SportPlaceDetailsViewModel : BaseViewModel {
     let lipasApiClient : LipasApiClient
     var sportPlaceId : Int
-    let showLoadingIcon = BehaviorRelay<Bool>(value: false)
     let sportPlaceDetails = BehaviorRelay<SportPlaceDetails?>(value: nil)
     
     init(sportPlaceId: Int, lipasApiClient: LipasApiClient = LipasApiClient()) {
@@ -23,6 +21,7 @@ class SportPlaceDetailsViewModel {
     
     func getSportPlaceDetails() {
         showLoadingIcon.accept(true)
+        showError.accept(false)
         lipasApiClient.getSportPlaceDetails(sportsPlaceId: sportPlaceId,completion:{ [weak self] result in
             self?.showLoadingIcon.accept(false)
             switch result {
@@ -30,6 +29,7 @@ class SportPlaceDetailsViewModel {
                 self?.sportPlaceDetails.accept(sportPlaceDetails)
             case .failure:
                 self?.sportPlaceDetails.accept(nil)
+                self?.showError.accept(true)
             }
         })
     }

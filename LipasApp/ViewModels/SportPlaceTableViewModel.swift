@@ -6,28 +6,28 @@
 //
 
 import Foundation
-import RxRelay
+import RxCocoa
 
-class SportPlaceTableViewModel {
+class SportPlaceTableViewModel : BaseViewModel {
     var lipasApiClient : LipasApiClient
     let simpleSportPlaceList = BehaviorRelay<[SportPlaceSimple]>(value: [])
-    let showLoadingIcon = BehaviorRelay<Bool>(value: false)
-    
+
     init(lipasApiClient: LipasApiClient = LipasApiClient()) {
         self.lipasApiClient = lipasApiClient
     }
     
     func getSimpleSportPlaces() {
         showLoadingIcon.accept(true)
+        showError.accept(false)
+        
         lipasApiClient.getSportPlaceSimpleList(completion: { [weak self] result in
             self?.showLoadingIcon.accept(false)
-            
             switch result {
             case .success(let places) :
                 self?.simpleSportPlaceList.accept(places)
             case .failure :
-                //TODO - handle errors here. Show error text
                 self?.simpleSportPlaceList.accept([])
+                self?.showError.accept(true)
             }
         })
     }

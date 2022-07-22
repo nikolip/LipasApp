@@ -31,6 +31,8 @@ class SportPlaceTableViewController : UITableViewController {
         addBackGroundViewToTable()
         bindActivityIndicator()
         
+        bindAlerts()
+        
         viewModel.getSimpleSportPlaces()
     }
     
@@ -43,7 +45,7 @@ class SportPlaceTableViewController : UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: SportPlaceTableViewCell.identifier)
     }
     
-    private func bindSportPlaceList() {
+    private func bindSportPlaceTable() {
         viewModel.simpleSportPlaceList.asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: SportPlaceTableViewCell.identifier, cellType: SportPlaceTableViewCell.self)) { row, sportPlace, cell in
                 cell.sportPlace = sportPlace
@@ -54,6 +56,14 @@ class SportPlaceTableViewController : UITableViewController {
         viewModel.showLoadingIcon.asObservable()
             .subscribe(onNext: { status in
                 status ? self.indicatorView.showLoader() : self.indicatorView.dismissLoader()
+            }).disposed(by: disboseBag)
+    }
+    
+    private func bindAlerts() {
+        viewModel.showError.asObservable()
+            .filter{$0}
+            .subscribe({ _ in
+                self.showAlert(title: "Error", message: "Something went wrong")
             }).disposed(by: disboseBag)
     }
     
