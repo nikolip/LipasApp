@@ -55,4 +55,6 @@ You might need to change development team to run app.
     - Tests doesn't fully cover app/code. They basicly templates for testing and can be continued from there
     - Error handling
         - Errors show hard coded strings which doesn't depend anything on error code enums.
+    - UI
+        - As can be seen, I haven't put that much effort on UI.
         
