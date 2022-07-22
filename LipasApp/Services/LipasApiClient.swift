@@ -20,7 +20,7 @@ class LipasApiClient {
     typealias GetSportPlaceSimpleListCompletion = (_ result: GetSportPlaceSimpleListResult) -> Void
     
     func getSportPlaceSimpleList(completion: @escaping GetSportPlaceSimpleListCompletion) {
-        //parameters are hard because this is example app.
+        //parameters are hardcoded because this is example app.
         AF.request(baseUrl, parameters: ["fields": "name"])
             .validate()
             .responseDecodable(of: [SportPlaceSimple].self) { response in

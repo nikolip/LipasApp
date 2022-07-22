@@ -12,6 +12,7 @@ import UIKit
 extension UIView {
     static let indicatorViewTag = 10000001
     
+    /// Adds loadingIndicatorView to UIView and starts animating it
     func showLoader() {
         var indicatorView = viewWithTag(UIView.indicatorViewTag) as? UIActivityIndicatorView
         
@@ -36,6 +37,7 @@ extension UIView {
         indicatorView?.startAnimating()
     }
     
+    /// Stops animating loadingIndicator subview and removes it if exists
     func dismissLoader() {
         let indicatorView = viewWithTag(UIView.indicatorViewTag) as? UIActivityIndicatorView
         indicatorView?.stopAnimating()

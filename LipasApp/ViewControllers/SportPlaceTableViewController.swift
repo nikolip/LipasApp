@@ -25,7 +25,7 @@ class SportPlaceTableViewController : UITableViewController {
         tableView.dataSource = nil
         
         registerCell()
-        bindViewModel()
+        bindSportPlaceTable()
         
         //add background view to table for activity indicator
         addBackGroundViewToTable()
@@ -43,7 +43,7 @@ class SportPlaceTableViewController : UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: SportPlaceTableViewCell.identifier)
     }
     
-    private func bindViewModel() {
+    private func bindSportPlaceList() {
         viewModel.simpleSportPlaceList.asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: SportPlaceTableViewCell.identifier, cellType: SportPlaceTableViewCell.self)) { row, sportPlace, cell in
                 cell.sportPlace = sportPlace
