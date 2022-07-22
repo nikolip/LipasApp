@@ -8,7 +8,7 @@
 import Foundation
 import RxCocoa
 
-/// Common ViewModel 
+/// Common ViewModel to be used in this project
 class BaseViewModel {
     let showLoadingIcon = BehaviorRelay<Bool>(value: false)
     let showError = BehaviorRelay<Bool>(value: false)

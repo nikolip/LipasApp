@@ -40,3 +40,19 @@ You might need to change development team to run app.
     - RxCocoa
     - Alamofire
     
+
+## What next
+
+### Next features?
+    - List API call parameters
+        - List parameters are hard coded and there is only one parameter included.
+        - Lipas Api contains pretty nice ways to fetch certain types of sport places so that could be nice feature to add
+    - Refresh
+        - User has no way to load more or refresh list shown on main screen.
+
+### Improvements
+
+    - Tests doesn't fully cover app/code. They basicly templates for testing and can be continued from there
+    - Error handling
+        - Errors show hard coded strings which doesn't depend anything on error code enums.
+        
