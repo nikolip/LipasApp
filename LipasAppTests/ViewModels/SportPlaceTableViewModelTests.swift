@@ -21,20 +21,23 @@ class SportPlaceTableViewModelTests : XCTestCase {
         
         //Value should be empty when initialized
         XCTAssertTrue(viewModel.simpleSportPlaceList.value.isEmpty)
+        XCTAssertFalse(lipasApiClient.isGetSportPlaceSimpleListcalled)
         
         viewModel.getSimpleSportPlaces()
         
         //List should contain 1 item
         XCTAssertTrue(viewModel.simpleSportPlaceList.value.count == 1)
-        
+        XCTAssertTrue(lipasApiClient.isGetSportPlaceSimpleListcalled)
     }
 }
 
 
 private class MockLipasApiClient : LipasApiClient {
     var getSportPlaceSimpleListResult: LipasApiClient.GetSportPlaceSimpleListResult?
+    var isGetSportPlaceSimpleListcalled = false
     
     override func getSportPlaceSimpleList(completion: @escaping LipasApiClient.GetSportPlaceSimpleListCompletion) {
+        isGetSportPlaceSimpleListcalled = true
         completion(getSportPlaceSimpleListResult!)
     }
 }
