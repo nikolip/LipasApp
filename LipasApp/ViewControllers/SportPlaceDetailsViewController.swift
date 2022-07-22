@@ -22,6 +22,8 @@ class SportPlaceDetailsViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Details"
+        
         initiateDetailViews()
         
         configureAndAddDetailView(title: "name", detailView: nameView)

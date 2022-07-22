@@ -19,6 +19,8 @@ class SportPlaceTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Sport Places"
+        
         //set nil to prevent duplicate datasources
         tableView.dataSource = nil
         
